@@ -47,7 +47,7 @@ body {
 
 .logo-name {
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 400;
     color: var(--color-wine);
     margin: 0;
@@ -56,7 +56,7 @@ body {
 
 .logo-subtitle {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--color-wine);
     font-weight: 500;
     margin: 0;
@@ -146,6 +146,64 @@ h2, h3 {
 
 .nav a:hover::after {
     width: 100%;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+    color: var(--color-text-primary);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a::after {
+    display: none;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-bg-sand);
+    color: var(--color-terracotta);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--color-terracotta);
 }
 
 /* ========================================
