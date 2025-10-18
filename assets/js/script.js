@@ -1,94 +1,63 @@
-// Menu Toggle para Mobile
+/**
+ * JavaScript para One Page Storytelling
+ * Raquel Quintino - Vidas em Movimento
+ */
+
+// Navegação com dots
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMain = document.querySelector('.nav-main');
+    const dots = document.querySelectorAll('.dot');
+    const sections = document.querySelectorAll('.fullscreen-section');
     
-    if (menuToggle && navMain) {
-        menuToggle.addEventListener('click', function() {
-            navMain.classList.toggle('active');
+    // Atualizar dot ativo ao scroll
+    const updateActiveDot = () => {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
             
-            // Animação do botão hamburger
-            const spans = menuToggle.querySelectorAll('span');
-            spans[0].style.transform = navMain.classList.contains('active') 
-                ? 'rotate(45deg) translate(5px, 5px)' 
-                : 'none';
-            spans[1].style.opacity = navMain.classList.contains('active') ? '0' : '1';
-            spans[2].style.transform = navMain.classList.contains('active') 
-                ? 'rotate(-45deg) translate(7px, -6px)' 
-                : 'none';
+            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+            }
         });
         
-        // Fechar menu ao clicar em um link
-        const navLinks = navMain.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    navMain.classList.remove('active');
-                    const spans = menuToggle.querySelectorAll('span');
-                    spans[0].style.transform = 'none';
-                    spans[1].style.opacity = '1';
-                    spans[2].style.transform = 'none';
-                }
-            });
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+            if (dot.getAttribute('href') === `#${currentSection}`) {
+                dot.classList.add('active');
+            }
         });
-    }
+    };
     
-    // Smooth scroll para links internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+    // Scroll suave ao clicar nos dots
+    dots.forEach(dot => {
+        dot.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const headerOffset = 100;
-                const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }
         });
     });
     
-    // Highlight do menu sidebar baseado na seção visível
-    const sections = document.querySelectorAll('.section');
-    const sidebarLinks = document.querySelectorAll('.nav-sidebar a');
+    // Atualizar ao scroll
+    window.addEventListener('scroll', updateActiveDot);
     
-    function highlightNavigation() {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - 150) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        sidebarLinks.forEach(link => {
-            link.style.backgroundColor = '';
-            link.style.color = '';
-            link.style.borderLeftColor = '';
-            
-            if (link.getAttribute('href') === `#${current}`) {
-                link.style.backgroundColor = 'var(--color-sand)';
-                link.style.color = 'var(--color-white)';
-                link.style.borderLeftColor = 'var(--color-wine)';
-            }
-        });
-    }
+    // Atualizar na carga
+    updateActiveDot();
     
-    window.addEventListener('scroll', highlightNavigation);
-    highlightNavigation(); // Executar na carga inicial
-    
-    // Animação de entrada para seções
+    // Animação de entrada para elementos
     const observerOptions = {
-        threshold: 0.1,
+        threshold: 0.2,
         rootMargin: '0px 0px -100px 0px'
     };
     
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -97,93 +66,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(section);
+    // Observar cards de serviço
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        observer.observe(card);
     });
     
-    // Lazy loading para imagens
-    const images = document.querySelectorAll('img');
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.5s ease-in';
-                
-                // Simular carregamento
-                setTimeout(() => {
-                    img.style.opacity = '1';
-                }, 100);
-                
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    images.forEach(img => imageObserver.observe(img));
-    
-    // Adicionar efeito parallax suave no hero
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * 0.5;
-            hero.style.transform = `translate3d(0, ${rate}px, 0)`;
-        });
-    }
-    
-    // Adicionar classe active aos links do menu principal quando na seção correspondente
-    const mainNavLinks = document.querySelectorAll('.nav-main a');
-    
-    function highlightMainNavigation() {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (window.pageYOffset >= sectionTop - 150) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        mainNavLinks.forEach(link => {
-            link.style.backgroundColor = '';
-            link.style.color = '';
-            
-            if (link.getAttribute('href') === `#${current}`) {
-                link.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-                link.style.color = 'var(--color-yellow)';
+    // Scroll indicator desaparece após scroll
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                scrollIndicator.style.opacity = '0';
+            } else {
+                scrollIndicator.style.opacity = '1';
             }
         });
     }
-    
-    window.addEventListener('scroll', highlightMainNavigation);
-    highlightMainNavigation();
-    
-    // Prevenção de FOUC (Flash of Unstyled Content)
-    document.body.style.opacity = '0';
-    window.addEventListener('load', function() {
-        document.body.style.transition = 'opacity 0.3s ease-in';
-        document.body.style.opacity = '1';
-    });
-    
-    // Acessibilidade: navegação por teclado
-    document.addEventListener('keydown', function(e) {
-        // Esc para fechar menu mobile
-        if (e.key === 'Escape' && navMain && navMain.classList.contains('active')) {
-            navMain.classList.remove('active');
-            if (menuToggle) {
-                const spans = menuToggle.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
-        }
-    });
-    
-    // Log de inicialização
-    console.log('Site Raquel Quintino - Vidas em Movimento carregado com sucesso! ✨');
 });
 
