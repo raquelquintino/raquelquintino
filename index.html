@@ -5,193 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Raquel Quintino - Formações, assessorias e oficinas em educação, território, comunicação e cultura">
     <title>Raquel Quintino - Vidas em Movimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
-    <!-- Header -->
+    <!-- Header Sticky -->
     <header class="header">
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="assets/img/logo.gif" alt="Logo Raquel Quintino" class="logo">
-                <div class="logo-text">
-                    <h1 class="logo-name font-whortle">Raquel Quintino</h1>
-                    <p class="logo-tagline">Vidas em movimento</p>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="assets/images/logo.gif" alt="Logo Raquel Quintino" class="logo-gif">
+                    <div class="logo-text">
+                        <h1 class="logo-name">Raquel Quintino</h1>
+                        <p class="logo-subtitle">Vidas em movimento</p>
+                    </div>
                 </div>
+                <nav class="nav">
+                    <a href="#inicio">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </nav>
             </div>
-            <nav class="nav">
-                <a href="#inicio">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
         </div>
     </header>
 
-    <!-- Hero Split -->
-    <section id="inicio" class="split-section hero-split">
-        <div class="split-left bg-elegant-cream">
-            <div class="split-content">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
                 <h2 class="hero-title">Formações, assessorias e oficinas</h2>
-                <p class="hero-subtitle">em educação, território, comunicação e cultura</p>
+                <p class="hero-tagline">em educação, território, comunicação e cultura</p>
                 <p class="hero-description">Processos formativos que promovem escuta, vínculo e criação coletiva com gestores públicos e equipes educacionais.</p>
                 <a href="#contato" class="btn-primary">Vamos conversar</a>
             </div>
         </div>
-        <div class="split-right">
-            <img src="assets/img/raquel-1.jpg" alt="Raquel Quintino" class="split-image">
-        </div>
     </section>
 
-    <!-- Serviços Split 1: Assessoria -->
-    <section id="servicos" class="split-section">
-        <div class="split-left">
-            <img src="assets/img/raquel-4.jpg" alt="Raquel Quintino em assessoria" class="split-image">
-        </div>
-        <div class="split-right bg-white">
-            <div class="split-content">
-                <h3 class="service-number">01</h3>
-                <h2 class="split-title text-wine">Assessoria Educacional</h2>
-                <p class="split-text">Consultoria especializada para secretarias de educação e organizações sociais.</p>
-                <ul class="service-list">
-                    <li>Desenvolvimento de projetos político-pedagógicos</li>
-                    <li>Programas de educação integral</li>
-                    <li>Gestão democrática e participativa</li>
-                    <li>Territórios educativos</li>
-                </ul>
+    <!-- Services Grid Section -->
+    <section id="servicos" class="services-grid">
+        <div class="container">
+            <h2 class="section-title">Serviços</h2>
+            
+            <div class="grid">
+                <!-- Card 1: Assessoria -->
+                <div class="card card-large">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-1.jpg" alt="Raquel Quintino - Assessoria Educacional">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-number">01</span>
+                        <h3 class="card-title">Assessoria Educacional</h3>
+                        <p class="card-description">Consultoria especializada para secretarias de educação e organizações sociais.</p>
+                        <ul class="card-list">
+                            <li>Desenvolvimento de projetos político-pedagógicos</li>
+                            <li>Programas de educação integral</li>
+                            <li>Gestão democrática e participativa</li>
+                            <li>Territórios educativos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2: Formações -->
+                <div class="card card-medium">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-2.jpg" alt="Raquel Quintino - Formações">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-number">02</span>
+                        <h3 class="card-title">Formações Continuadas</h3>
+                        <p class="card-description">Processos formativos para equipes gestoras e educadores.</p>
+                        <ul class="card-list">
+                            <li>Metodologias ativas de aprendizagem</li>
+                            <li>Competências socioemocionais</li>
+                            <li>Educação integral e territórios educativos</li>
+                            <li>Gestão pedagógica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3: Oficinas -->
+                <div class="card card-medium">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-3.jpg" alt="Raquel Quintino - Oficinas">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-number">03</span>
+                        <h3 class="card-title">Oficinas Práticas</h3>
+                        <p class="card-description">Oficinas vivenciais que promovem criação coletiva e diálogo.</p>
+                        <ul class="card-list">
+                            <li>Educação em direitos humanos e cidadania</li>
+                            <li>Teatro do Oprimido e metodologias teatrais</li>
+                            <li>Planejamento participativo e escuta ativa</li>
+                            <li>Metodologias criativas para sala de aula</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4: Palestras -->
+                <div class="card card-large">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-4.jpg" alt="Raquel Quintino - Palestras">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-number">04</span>
+                        <h3 class="card-title">Palestras Inspiradoras</h3>
+                        <p class="card-description">Palestras que provocam reflexão e inspiram transformação.</p>
+                        <ul class="card-list">
+                            <li>Educação integral e desenvolvimento humano</li>
+                            <li>Gestão democrática e participação</li>
+                            <li>Inovação pedagógica</li>
+                            <li>Educação e território</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5: Metodologias -->
+                <div class="card card-medium">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-5.jpg" alt="Raquel Quintino - Metodologias">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-number">05</span>
+                        <h3 class="card-title">Metodologias Participativas</h3>
+                        <p class="card-description">Ferramentas de participação, escuta e construção coletiva.</p>
+                        <ul class="card-list">
+                            <li>Diagnóstico participativo</li>
+                            <li>Planejamento colaborativo</li>
+                            <li>Facilitação de processos grupais</li>
+                            <li>Construção coletiva de projetos educativos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6: Photo Feature -->
+                <div class="card card-photo">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-6.jpg" alt="Raquel Quintino">
+                    </div>
+                </div>
+
+                <!-- Card 7: Photo Feature -->
+                <div class="card card-photo">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-7.jpg" alt="Raquel Quintino">
+                    </div>
+                </div>
+
+                <!-- Card 8: Photo Feature -->
+                <div class="card card-photo">
+                    <div class="card-image">
+                        <img src="assets/images/raquel-8.jpg" alt="Raquel Quintino">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Serviços Split 2: Formações -->
-    <section class="split-section">
-        <div class="split-left bg-elegant-beige">
-            <div class="split-content">
-                <h3 class="service-number">02</h3>
-                <h2 class="split-title text-caramel">Formações Continuadas</h2>
-                <p class="split-text">Processos formativos para equipes gestoras e educadores.</p>
-                <ul class="service-list">
-                    <li>Metodologias ativas de aprendizagem</li>
-                    <li>Competências socioemocionais</li>
-                    <li>Educação integral e territórios educativos</li>
-                    <li>Gestão pedagógica</li>
-                </ul>
-            </div>
-        </div>
-        <div class="split-right">
-            <img src="assets/img/raquel-7.jpg" alt="Raquel Quintino em formação" class="split-image">
-        </div>
-    </section>
-
-    <!-- Serviços Split 3: Oficinas -->
-    <section class="split-section">
-        <div class="split-left">
-            <img src="assets/img/raquel-2.jpg" alt="Raquel Quintino em oficina" class="split-image">
-        </div>
-        <div class="split-right bg-white">
-            <div class="split-content">
-                <h3 class="service-number">03</h3>
-                <h2 class="split-title text-wine">Oficinas Práticas</h2>
-                <p class="split-text">Oficinas vivenciais que promovem criação coletiva e diálogo.</p>
-                <ul class="service-list">
-                    <li>Educação em direitos humanos e cidadania</li>
-                    <li>Teatro do Oprimido e metodologias teatrais</li>
-                    <li>Planejamento participativo e escuta ativa</li>
-                    <li>Metodologias criativas para sala de aula</li>
-                </ul>
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Raquel Quintino</h2>
+                    
+                    <div class="bio">
+                        <p>Raquel Quintino é doutoranda em Planejamento e Gestão do Território pela Universidade Federal do ABC.</p>
+                        
+                        <p>Mestra em Comunicação Social, graduada em Ciências Sociais, licenciada em Pedagogia e Teatro com formação em Teatro do Oprimido pelo CTO-RJ.</p>
+                        
+                        <p>Integra o TERRITORIAL – Grupo de Pesquisas em Território Praticado, Conjuntura e Tecnopolítica na América Latina.</p>
+                        
+                        <p>Atuou como formadora em Direitos Humanos no Instituto Vladimir Herzog e Coordenadora Pedagógica no Instituto Paulo Freire.</p>
+                        
+                        <p>Lecionou Antropologia, Economia, Política e Sociologia por sete anos na Faculdade de Mauá.</p>
+                        
+                        <p>Desenvolveu o Laboratório Rádio Comunitária com o SESC-SP e prestou consultoria para Rádio ZFM, prefeituras de Mauá, Santo André, São Paulo e Ministério da Ciência e Tecnologia.</p>
+                    </div>
+                    
+                    <blockquote class="quote">
+                        "Acredita na educação como processo de transformação social construído coletivamente."
+                    </blockquote>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Serviços Split 4: Palestras -->
-    <section class="split-section">
-        <div class="split-left bg-elegant-beige">
-            <div class="split-content">
-                <h3 class="service-number">04</h3>
-                <h2 class="split-title text-caramel">Palestras Inspiradoras</h2>
-                <p class="split-text">Palestras que provocam reflexão e inspiram transformação.</p>
-                <ul class="service-list">
-                    <li>Educação integral e desenvolvimento humano</li>
-                    <li>Gestão democrática e participação</li>
-                    <li>Inovação pedagógica</li>
-                    <li>Educação e território</li>
-                </ul>
-            </div>
-        </div>
-        <div class="split-right">
-            <img src="assets/img/raquel-3.jpg" alt="Raquel Quintino palestrando" class="split-image">
-        </div>
-    </section>
-
-    <!-- Serviços Split 5: Metodologias -->
-    <section class="split-section">
-        <div class="split-left">
-            <img src="assets/img/raquel-6.jpg" alt="Raquel Quintino facilitando" class="split-image">
-        </div>
-        <div class="split-right bg-white">
-            <div class="split-content">
-                <h3 class="service-number">05</h3>
-                <h2 class="split-title text-wine">Metodologias Participativas</h2>
-                <p class="split-text">Ferramentas de participação, escuta e construção coletiva.</p>
-                <ul class="service-list">
-                    <li>Diagnóstico participativo</li>
-                    <li>Planejamento colaborativo</li>
-                    <li>Facilitação de processos grupais</li>
-                    <li>Construção coletiva de projetos educativos</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sobre Split -->
-    <section id="sobre" class="split-section">
-        <div class="split-left bg-elegant-brown">
-            <div class="split-content sobre-content">
-                <h2 class="split-title-white">Sobre Raquel Quintino</h2>
-                <p class="sobre-text-white">Educadora, consultora e formadora com mais de 15 anos de experiência em educação pública.</p>
-                <p class="sobre-text-white">Atua junto a secretarias de educação, escolas e organizações no desenvolvimento de projetos pedagógicos e formação de educadores.</p>
-                <p class="sobre-text-white">Pedagoga e Mestre em Educação. Especialista em Gestão Educacional e Metodologias Participativas.</p>
-                <p class="sobre-highlight font-cursive">"Acredita na educação como processo de transformação social construído coletivamente."</p>
-            </div>
-        </div>
-        <div class="split-right">
-            <img src="assets/img/raquel-paulo-freire.jpg" alt="Raquel Quintino com estátua de Paulo Freire" class="split-image">
-        </div>
-    </section>
-
-    <!-- Contato Split -->
-    <section id="contato" class="split-section">
-        <div class="split-left">
-            <img src="assets/img/raquel-5.jpg" alt="Raquel Quintino" class="split-image">
-        </div>
-        <div class="split-right bg-sand">
-            <div class="split-content contact-content">
-                <h2 class="split-title text-elegant-brown">Vamos conversar?</h2>
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Vamos conversar?</h2>
                 <p class="contact-intro">Entre em contato para conhecer melhor o trabalho ou agendar uma conversa.</p>
                 
                 <div class="contact-links">
                     <a href="https://www.linkedin.com/in/raquel-quintino" target="_blank" class="contact-link">
+                        <span class="contact-icon">in</span>
                         <span class="contact-label">LinkedIn</span>
                         <span class="contact-arrow">→</span>
                     </a>
                     <a href="https://wa.me/5511999999999" target="_blank" class="contact-link">
+                        <span class="contact-icon">📱</span>
                         <span class="contact-label">WhatsApp</span>
                         <span class="contact-arrow">→</span>
                     </a>
                     <a href="mailto:contato@raquelquintino.com.br" class="contact-link">
+                        <span class="contact-icon">@</span>
                         <span class="contact-label">E-mail</span>
                         <span class="contact-arrow">→</span>
                     </a>
                 </div>
-                
-                <footer class="footer">
-                    <p class="footer-quote font-cursive">"A educação é um ato de amor, por isso, um ato de coragem."</p>
-                    <p class="footer-author">— Paulo Freire</p>
-                    <p class="footer-copy">&copy; 2025 Raquel Quintino</p>
-                </footer>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-quote">"A educação é um ato de amor, por isso, um ato de coragem."</p>
+            <p class="footer-author">— Paulo Freire</p>
+            <p class="footer-copy">&copy; 2025 Raquel Quintino</p>
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
