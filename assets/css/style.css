@@ -529,3 +529,91 @@ body {
     outline-offset: 4px;
 }
 
+
+
+/* Hero com foto de fundo */
+.hero-with-photo {
+    background-image: linear-gradient(rgba(248, 245, 240, 0.85), rgba(248, 245, 240, 0.85)), url('../img/raquel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Service Cards com imagens */
+.service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05);
+}
+
+/* Seção Sobre com split layout */
+.sobre-split {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+}
+
+.sobre-text-content {
+    flex: 1;
+}
+
+.sobre-image {
+    flex: 0 0 400px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsivo */
+@media (max-width: 968px) {
+    .sobre-split {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .sobre-image {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .service-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-with-photo {
+        background-image: linear-gradient(rgba(248, 245, 240, 0.92), rgba(248, 245, 240, 0.92)), url('../img/raquel-1.jpg');
+    }
+    
+    .sobre-image {
+        height: 300px;
+    }
+    
+    .service-image {
+        height: 160px;
+    }
+}
+
