@@ -211,8 +211,11 @@ h2, h3 {
    ======================================== */
 
 .hero {
-    padding: 8rem 0 6rem;
-    background: linear-gradient(135deg, #FAF8F5 0%, #F8F5F0 100%);
+    padding: 4rem 0 3rem;
+    background: linear-gradient(135deg, rgba(250, 248, 245, 0.95) 0%, rgba(248, 245, 240, 0.95) 100%), url('../img/raquel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-content {
@@ -224,7 +227,7 @@ h2, h3 {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--color-brown);
+    color: var(--color-wine);
     margin-bottom: 1rem;
     line-height: 1.2;
 }
