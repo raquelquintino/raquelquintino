@@ -105,8 +105,8 @@ h2, h3 {
 }
 
 .logo-gif {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 
@@ -546,8 +546,8 @@ h2, h3 {
     }
     
     .logo-gif {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
     
     .nav a,
