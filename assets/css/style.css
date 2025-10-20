@@ -878,4 +878,27 @@ h2, h3 {
   padding-left:547px;
  }
  
+}/* Inicio */
+#inicio{
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Heading */
+.logo-section .logo-text h1{
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.logo-section .logo-text p{
+ transform:translatex(0px) translatey(0px);
+ color:#7d244f;
+}
+
+@media (min-width:769px){
+
+ /* Inicio */
+ #inicio{
+  padding-left:547px;
+ }
+ 
 }
