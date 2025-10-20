@@ -975,3 +975,41 @@ h2, h3 {
  }
  
 }
+/* Image */
+.header .logo-section img{
+ min-width:128px;
+ max-width:137px;
+ min-height:146px;
+ max-height:26px;
+}
+
+/* Header content */
+.header .container .header-content{
+ width:82% !important;
+}
+
+@media (min-width:769px){
+
+ /* Heading */
+ .logo-section .logo-text h1{
+  font-size:76px;
+  transform:translatex(-216px) translatey(12px);
+ }
+ 
+ /* Paragraph */
+ .logo-section .logo-text p{
+  font-size:44px;
+ }
+ 
+ /* Image */
+ .header .logo-section img{
+  transform:translatex(-194px) translatey(-8px);
+ }
+ 
+ /* Image */
+ .header .container .header-content .logo-section img{
+  height:216px !important;
+  width:308px !important;
+ }
+ 
+}
