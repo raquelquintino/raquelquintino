@@ -47,7 +47,7 @@ body {
 
 .logo-name {
     font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     color: var(--color-wine);
     margin: 0;
@@ -56,7 +56,7 @@ body {
 
 .logo-subtitle {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-wine);
     font-weight: 500;
     margin: 0;
@@ -89,7 +89,7 @@ h2, h3 {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(184, 130, 109, 0.1);
     z-index: 1000;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
 .header-content {
@@ -105,8 +105,8 @@ h2, h3 {
 }
 
 .logo-gif {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
 }
 
@@ -121,7 +121,7 @@ h2, h3 {
 }
 
 .nav a {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--color-text-primary);
     text-decoration: none;
@@ -155,7 +155,7 @@ h2, h3 {
 }
 
 .dropdown .dropbtn {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--color-text-primary);
     text-decoration: none;
@@ -536,13 +536,33 @@ h2, h3 {
     }
 }
 
+@media (max-width: 1024px) {
+    .logo-name {
+        font-size: 3.5rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 1.75rem;
+    }
+    
+    .logo-gif {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .nav a,
+    .dropdown .dropbtn {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 1.5rem;
     }
     
     .header {
-        padding: 1rem 0;
+        padding: 1.25rem 0;
     }
     
     .header-content {
@@ -550,27 +570,32 @@ h2, h3 {
         gap: 1.5rem;
     }
     
+    .logo-section {
+        gap: 1rem;
+    }
+    
     .logo-gif {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
     
     .logo-name {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .logo-subtitle {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     
     .nav {
-        gap: 1.5rem;
+        gap: 1.25rem;
         flex-wrap: wrap;
         justify-content: center;
     }
     
-    .nav a {
-        font-size: 0.95rem;
+    .nav a,
+    .dropdown .dropbtn {
+        font-size: 1rem;
     }
     
     .hero {
@@ -632,6 +657,24 @@ h2, h3 {
 }
 
 @media (max-width: 480px) {
+    .logo-gif {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-name {
+        font-size: 2rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 1rem;
+    }
+    
+    .nav a,
+    .dropdown .dropbtn {
+        font-size: 0.9rem;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
