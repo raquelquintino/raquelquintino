@@ -854,4 +854,28 @@ h2, h3 {
     background-repeat: no-repeat;
   }
 }
+/* Inicio */
+#inicio{
+ transform:translatex(0px) translatey(0px);
+}
 
+@media (min-width:769px){
+
+ /* Inicio */
+ #inicio{
+  padding-left:547px;
+ }
+ 
+}/* Inicio */
+#inicio{
+ transform:translatex(0px) translatey(0px);
+}
+
+@media (min-width:769px){
+
+ /* Inicio */
+ #inicio{
+  padding-left:547px;
+ }
+ 
+}
