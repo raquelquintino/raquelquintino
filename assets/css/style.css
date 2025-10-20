@@ -901,4 +901,77 @@ h2, h3 {
   padding-left:547px;
  }
  
+}/* Inicio */
+#inicio{
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Heading */
+.logo-section .logo-text h1{
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Paragraph */
+.logo-section .logo-text p{
+ transform:translatex(0px) translatey(0px);
+ color:#7d244f;
+}
+
+@media (max-width:768px){
+
+ /* Header content */
+ .header .header-content{
+  transform:translatex(-6px) translatey(-4px);
+ }
+ 
+ /* Heading */
+ .logo-section .logo-text h1{
+  font-size:52px;
+  transform:translatex(-207px) translatey(0px);
+  position:relative;
+  left:-200px;
+ }
+ 
+ /* Image */
+ .header .logo-section img{
+  transform:translatex(-280px) translatey(-20px);
+  width:145px;
+  padding-left:0px;
+  padding-right:0px;
+  padding-top:0px;
+  padding-bottom:0px;
+  position:relative;
+  top:25px;
+  background-position-x:0%;
+  height:146px;
+  left:-111px;
+  bottom:-58px;
+  right:-45px;
+ }
+ 
+ /* Logo section */
+ .header .logo-section{
+  transform:translatex(316px) translatey(-11px);
+ }
+ 
+ /* Paragraph */
+ .logo-section .logo-text p{
+  font-size:35px;
+  transform:translatex(-188px) translatey(0px);
+ }
+ 
+ /* Hero tagline */
+ #inicio .hero-tagline{
+  transform:translatex(618px) translatey(103px);
+ }
+ 
+}
+
+@media (min-width:769px){
+
+ /* Inicio */
+ #inicio{
+  padding-left:547px;
+ }
+ 
 }
