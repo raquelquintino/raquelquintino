@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Seção Hero com Diferentes Fotos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #FAF8F5;
+        }
+
+        :root {
+            --color-wine: #7C2D2D;
+            --color-terracotta: #B8826D;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            padding: 4rem 0 3rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--color-wine);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            color: var(--color-terracotta);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            font-style: italic;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: #4A3F35;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background-color: var(--color-terracotta);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(184, 130, 109, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-wine);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 45, 45, 0.4);
+        }
+
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .controls h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-wine);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .controls label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #4A3F35;
+        }
+
+        .controls input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .controls input[type="range"] {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .opacity-value {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: 600;
+            color: var(--color-wine);
+        }
+
+        .divider {
+            height: 1px;
+            background: #E8DDD0;
+            margin: 15px 0;
+        }
+
+        .info-text {
+            font-size: 0.85rem;
+            color: #6B4423;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <h3>Escolha a Foto de Fundo</h3>
+        
+        <label>
+            <input type="radio" name="foto" value="raquel-1.jpg" checked>
+            Foto 1 (Palestra)
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-2.jpg">
+            Foto 2 (Retrato)
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-3.jpg">
+            Foto 3 (Oficina)
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-4.jpg">
+            Foto 4
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-5.jpg">
+            Foto 5
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-6.jpg">
+            Foto 6
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-7.jpg">
+            Foto 7
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-8.jpg">
+            Foto 8
+        </label>
+        <label>
+            <input type="radio" name="foto" value="raquel-palestra.jpg">
+            Foto Palestra
+        </label>
+
+        <div class="divider"></div>
+
+        <label>
+            Opacidade do Gradiente:
+            <span class="opacity-value">95%</span>
+            <input type="range" id="opacity" min="70" max="98" value="95">
+        </label>
+
+        <p class="info-text">Ajuste a opacidade para controlar a visibilidade da foto de fundo</p>
+    </div>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Formações, Assessorias, Oficinas e Palestras</h2>
+                <p class="hero-tagline">em educação, território, comunicação e cultura</p>
+                <p class="hero-description">Processos formativos que promovem escuta, vínculo e criação coletiva com gestores públicos e equipes educacionais.</p>
+                <a href="#" class="btn-primary">Vamos conversar</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 0; background: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: #4A3F35; margin-bottom: 2rem;">Serviços</h2>
+            <p style="font-size: 1.2rem; color: #6B4423;">Esta é a seção seguinte para referência visual...</p>
+        </div>
+    </section>
+
+    <script>
+        const hero = document.querySelector('.hero');
+        const radios = document.querySelectorAll('input[name="foto"]');
+        const opacitySlider = document.getElementById('opacity');
+        const opacityValue = document.querySelector('.opacity-value');
+
+        function updateBackground() {
+            const selectedFoto = document.querySelector('input[name="foto"]:checked').value;
+            const opacity = opacitySlider.value / 100;
+            
+            hero.style.background = `linear-gradient(135deg, rgba(250, 248, 245, ${opacity}) 0%, rgba(248, 245, 240, ${opacity}) 100%), url('assets/img/${selectedFoto}')`;
+            hero.style.backgroundSize = 'cover';
+            hero.style.backgroundPosition = 'center';
+            hero.style.backgroundAttachment = 'fixed';
+        }
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', updateBackground);
+        });
+
+        opacitySlider.addEventListener('input', function() {
+            opacityValue.textContent = this.value + '%';
+            updateBackground();
+        });
+
+        // Inicializar
+        updateBackground();
+    </script>
+</body>
+</html>
+
