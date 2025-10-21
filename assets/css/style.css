@@ -47,7 +47,7 @@ body {
 
 .logo-name {
     font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
     color: var(--color-wine);
     margin: 0;
@@ -56,10 +56,19 @@ body {
 
 .logo-subtitle {
     font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--color-wine);
     font-weight: 500;
+    margin: 0.25rem 0;
+}
+
+.logo-tagline {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.3rem;
+    color: var(--color-terracotta);
+    font-style: italic;
     margin: 0;
+    text-align: right;
 }
 
 h2, h3 {
@@ -96,44 +105,51 @@ h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo-section {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    flex-shrink: 0;
 }
 
 .logo-gif {
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 
-.logo-text {
+.header-text-center {
+    flex-grow: 1;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .nav {
     display: flex;
     gap: 1.5rem;
+    flex-shrink: 0;
+    align-items: center;
 }
 
 .nav a {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-wine);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 .nav a::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 2px;
     background-color: var(--color-terracotta);
@@ -142,10 +158,11 @@ h2, h3 {
 
 .nav a:hover {
     color: var(--color-terracotta);
+    background-color: rgba(184, 130, 109, 0.1);
 }
 
 .nav a:hover::after {
-    width: 100%;
+    width: 80%;
 }
 
 /* Dropdown Menu */
@@ -155,15 +172,22 @@ h2, h3 {
 }
 
 .dropdown .dropbtn {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-wine);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.dropdown .dropbtn:hover {
+    color: var(--color-terracotta);
+    background-color: rgba(184, 130, 109, 0.1);
 }
 
 .dropdown-content {
@@ -185,8 +209,9 @@ h2, h3 {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .dropdown-content a::after {
@@ -204,6 +229,7 @@ h2, h3 {
 
 .dropdown:hover .dropbtn {
     color: var(--color-terracotta);
+    background-color: rgba(184, 130, 109, 0.1);
 }
 
 /* ========================================
@@ -538,21 +564,26 @@ h2, h3 {
 
 @media (max-width: 1024px) {
     .logo-name {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     
     .logo-subtitle {
         font-size: 1.5rem;
     }
     
+    .logo-tagline {
+        font-size: 1.1rem;
+    }
+    
     .logo-gif {
-        width: 70px;
-        height: 70px;
+        width: 75px;
+        height: 75px;
     }
     
     .nav a,
     .dropdown .dropbtn {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 
@@ -562,40 +593,51 @@ h2, h3 {
     }
     
     .header {
-        padding: 1rem 0;
+        padding: 1.25rem 0;
     }
     
     .header-content {
         flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .logo-section {
-        gap: 0.75rem;
+        gap: 1.25rem;
     }
     
     .logo-gif {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
     
-    .logo-name {
-        font-size: 2rem;
+    .header-text-center {
+        order: 2;
     }
     
-    .logo-subtitle {
-        font-size: 1rem;
+    .logo-section {
+        order: 1;
     }
     
     .nav {
+        order: 3;
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
     }
     
+    .logo-name {
+        font-size: 2.2rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .logo-tagline {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
     .nav a,
     .dropdown .dropbtn {
         font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
     
     .hero {
@@ -657,22 +699,35 @@ h2, h3 {
 }
 
 @media (max-width: 480px) {
+    .header {
+        padding: 1rem 0;
+    }
+    
     .logo-gif {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     
     .logo-name {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
     
     .logo-subtitle {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+    }
+    
+    .logo-tagline {
+        font-size: 0.85rem;
+    }
+    
+    .nav {
+        gap: 0.75rem;
     }
     
     .nav a,
     .dropdown .dropbtn {
         font-size: 0.85rem;
+        padding: 0.35rem 0.7rem;
     }
     
     .hero-title {
