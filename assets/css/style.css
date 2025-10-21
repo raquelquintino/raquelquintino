@@ -105,8 +105,8 @@ h2, h3 {
 }
 
 .logo-gif {
-    width: 85px;
-    height: 85px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
@@ -214,7 +214,7 @@ h2, h3 {
     padding: 4rem 0 3rem;
     background: linear-gradient(135deg, rgba(250, 248, 245, 0.70) 0%, rgba(248, 245, 240, 0.70) 100%), url('../img/raquel-3.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-attachment: fixed;
 }
 
@@ -538,16 +538,16 @@ h2, h3 {
 
 @media (max-width: 1024px) {
     .logo-name {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     
     .logo-subtitle {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
     .logo-gif {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
     }
     
     .nav a,
@@ -558,44 +558,44 @@ h2, h3 {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
     
     .header {
-        padding: 1.25rem 0;
+        padding: 1rem 0;
     }
     
     .header-content {
         flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .logo-section {
         gap: 1rem;
     }
     
+    .logo-section {
+        gap: 0.75rem;
+    }
+    
     .logo-gif {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     
     .logo-name {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .logo-subtitle {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     .nav {
-        gap: 1.25rem;
+        gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
     }
     
     .nav a,
     .dropdown .dropbtn {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .hero {
@@ -658,21 +658,21 @@ h2, h3 {
 
 @media (max-width: 480px) {
     .logo-gif {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     
     .logo-name {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
     .logo-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .nav a,
     .dropdown .dropbtn {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     .hero-title {
