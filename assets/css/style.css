@@ -98,7 +98,7 @@ h2, h3 {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(184, 130, 109, 0.1);
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .header-content {
@@ -109,14 +109,20 @@ h2, h3 {
 }
 
 .logo-section {
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .logo-gif {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -230,66 +236,11 @@ h2, h3 {
    ======================================== */
 
 .hero {
-    padding: 3rem 0;
-    background: var(--color-bg-sand);
-}
-
-.hero-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 3rem 2rem;
-    background: linear-gradient(135deg, rgba(250, 248, 245, 0.95) 0%, rgba(248, 245, 240, 0.95) 100%);
-    border-radius: 20px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(124, 45, 45, 0.1);
-}
-
-.hero-left {
-    flex: 1;
-}
-
-.hero-name {
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
-    font-weight: 400;
-    color: var(--color-wine);
-    margin: 0;
-    line-height: 1.2;
-}
-
-.hero-center {
-    flex: 1;
-    text-align: center;
-}
-
-.hero-title {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
-    font-weight: 400;
-    color: var(--color-wine);
-    margin: 0 0 0.5rem 0;
-    line-height: 1.2;
-}
-
-.hero-tagline {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.5rem;
-    color: var(--color-terracotta);
-    font-style: italic;
-    margin: 0;
-}
-
-.hero-right {
-    flex: 0 0 auto;
-}
-
-.hero-logo {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 10px rgba(124, 45, 45, 0.2));
+    padding: 4rem 0 3rem;
+    background: linear-gradient(135deg, rgba(250, 248, 245, 0.70) 0%, rgba(248, 245, 240, 0.70) 100%), url('../img/raquel-3.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
 }
 
 .hero-content {
@@ -298,18 +249,26 @@ h2, h3 {
     text-align: center;
 }
 
-.hero-subtitle {
-    font-size: 2.5rem;
+.hero-title {
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--color-wine);
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
+.hero-tagline {
+    font-size: 1.5rem;
+    color: var(--color-terracotta);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
 .hero-description {
     font-size: 1.2rem;
     color: var(--color-text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.8;
 }
 
