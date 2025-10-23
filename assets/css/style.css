@@ -47,7 +47,7 @@ body {
 
 .logo-name {
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: var(--color-wine);
     margin: 0;
@@ -99,32 +99,33 @@ h2, h3 {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(184, 130, 109, 0.1);
     z-index: 1000;
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
 .header-row-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 120px;
+    grid-template-columns: 1fr 1fr 240px;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 2rem 0;
 }
 
 .header-row-2 {
     display: flex;
     justify-content: flex-start;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .logo-gif {
-    width: 120px;
-    height: 120px;
+    width: 240px;
+    height: 240px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -579,8 +580,14 @@ h2, h3 {
     }
     
     .logo-gif {
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
+    }
+    
+    .header-row-1 {
+        grid-template-columns: 1fr 1fr 180px;
+        gap: 2rem;
+        padding: 1.5rem 0;
     }
     
     .nav a,
@@ -630,9 +637,20 @@ h2, h3 {
         font-size: 1.1rem;
     }
     
+    .logo-name {
+        font-size: 3rem;
+    }
+    
     .logo-gif {
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .header-row-1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1rem 0;
     }
     
     .nav {
