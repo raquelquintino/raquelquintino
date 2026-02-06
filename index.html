@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Raquel Quintino - Pesquisadora, Professora, Comunicadora Social. Metodologias participativas, comunicação comunitária e escuta nos territórios.">
-    <meta name="keywords" content="Slum Upgrading, Metodologias Participativas, Escuta Territorial Ativa, Direitos Humanos, Planejamento Territorial, Governança Participativa, Comunicação Comunitária, Educação Popular, Cartografias Participativas">
+    <meta name="keywords" content="Slum Upgrading, Metodologias Participativas, Escuta Territorial Ativa, Direitos Humanos, Planejamento Territorial, Governança Participativa">
     <title>Raquel Quintino - Vidas em Movimento</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/gif" href="assets/img/favicon.gif">
     
     <!-- Google Fonts -->
@@ -15,617 +14,265 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-moderno.css">
 </head>
 <body>
-    <!-- HEADER -->
+    <!-- HEADER MINIMALISTA -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo e Marca -->
-                <div class="header-brand">
-                    <h1 class="logo-nome">Raquel Quintino</h1>
-                    <p class="logo-subtitulo">Pesquisadora, Professora, Comunicadora Social</p>
-                    <p class="logo-projeto">Vidas em Movimento</p>
-                </div>
-            </div>
-            
-            <!-- Navegação -->
-            <nav class="nav">
+        <div class="header-container">
+            <h1 class="logo-nome">Raquel Quintino</h1>
+            <nav>
                 <ul class="nav-list">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li><a href="#assessoria" class="nav-link">Assessoria Técnica</a></li>
+                    <li><a href="#assessoria" class="nav-link">Assessoria</a></li>
                     <li><a href="#formacoes" class="nav-link">Formações</a></li>
-                    <li><a href="#territorios" class="nav-link">Territórios</a></li>
-                    <li><a href="#publicacoes" class="nav-link">Publicações</a></li>
-                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#devolutivas" class="nav-link">Devolutivas</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-titulo">Vidas em Movimento</h2>
-                <p class="hero-frase">Metodologias participativas, comunicação comunitária e escuta (mobilização) nos territórios</p>
-                <div class="hero-ctas">
-                    <a href="#sobre" class="btn btn-primary">Conheça minha trajetória</a>
-                    <a href="#assessoria" class="btn btn-secondary">Consultoria Técnica</a>
+    <!-- HERO SECTION COM BANNER -->
+    <section id="home" class="hero-modern">
+        <img src="assets/img/banner-hero.jpg" alt="Raquel Quintino - Vidas em Movimento" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <div class="hero-content" style="position: relative; z-index: 2;">
+            <div class="hero-ctas" style="margin-top: 20rem;">
+                <a href="#sobre" class="btn btn-primary">Conheça minha trajetória</a>
+                <a href="#assessoria" class="btn btn-secondary">Consultoria Técnica</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA DE FOTOS EM DESTAQUE -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/img/raquel-2.jpg" alt="Formação em Direitos Humanos">
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Formação em Direitos Humanos - Instituto Vladimir Herzog</p>
                 </div>
             </div>
+            <div class="gallery-item">
+                <img src="assets/img/raquel-3.jpg" alt="Centro Cultural Solano Trindade">
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Centro Cultural Afro-Brasileiro Solano Trindade</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/raquel-4.jpg" alt="Laboratório de Rádio Comunitária">
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Laboratório de Rádio Comunitária - SESC-SP</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/raquel-5.jpg" alt="VídeoAção">
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">VídeoAção - Inclusão digital e produção audiovisual</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/raquel-6.jpg" alt="Cartografias Participativas">
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Cartografias Participativas</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/raquel-7.jpg" alt="Mobilização Territorial">
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Mobilização Territorial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE COM FOTO -->
+    <section id="sobre" class="sobre-section">
+        <img src="assets/img/raquel-8.jpg" alt="Raquel Quintino" class="sobre-image">
+        <div class="sobre-content">
+            <h2>Da Periferia à Academia: Uma Trajetória de Transformação Social</h2>
+            <p>Minha atuação nasce do chão do <strong>Jardim Zaíra e Chafik-Macuco</strong>, territórios periféricos de Mauá que me ensinaram que transformação social se constrói coletivamente, com escuta ativa e presença constante.</p>
+            <p><strong>Doutoranda em Planejamento e Gestão do Território</strong> pela UFABC, onde pesquiso cartografias territoriais na América Latina como integrante do grupo TERRITORIAL – Território Praticado, Conjuntura e Tecnopolítica.</p>
+            <p><strong>Mestra em Comunicação Social</strong> pela UMESP, <strong>Graduada em Ciências Sociais</strong> pela FSA, e <strong>Licenciada em Pedagogia e Teatro</strong>, com formação em Teatro do Oprimido pelo CTO-RJ.</p>
+            <p>Atuei como <strong>formadora em Direitos Humanos no Instituto Vladimir Herzog</strong> e como <strong>coordenadora pedagógica no Centro Cultural Solano Trindade</strong> (2020-2023).</p>
         </div>
     </section>
 
     <!-- ÁREAS DE ATUAÇÃO -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Áreas de Atuação</h2>
+    <section id="assessoria" class="section-modern">
+        <h2 class="section-title-modern">Áreas de Atuação</h2>
+        <p class="section-subtitle-modern">Planejamento, Gestão do Território e Governança Participativa</p>
+        
+        <div class="cards-grid">
+            <div class="card-modern">
+                <span class="card-icon-modern">🗺️</span>
+                <h3 class="card-title-modern">Planejamento Territorial</h3>
+                <p class="card-text-modern">Assessoria técnica para políticas públicas territorializadas, combinando rigor metodológico e participação comunitária.</p>
             </div>
             
-            <div class="grid">
-                <div class="card">
-                    <div class="card-icon">🗺️</div>
-                    <h3 class="card-title">Planejamento e Gestão do Território</h3>
-                    <p class="card-description">Assessoria técnica para o desenvolvimento de políticas públicas territorializadas, combinando rigor metodológico e participação comunitária.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">🤝</div>
-                    <h3 class="card-title">Metodologias Participativas</h3>
-                    <p class="card-description">Facilitação de processos de diagnóstico, planejamento e avaliação que fortalecem a governança local e a construção coletiva de soluções.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">📚</div>
-                    <h3 class="card-title">Educação Popular e Direitos Humanos</h3>
-                    <p class="card-description">Formações que tecem vínculos, valorizam saberes territoriais e promovem uma cultura de direitos humanos a partir da pedagogia freireana.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">🗺️</div>
-                    <h3 class="card-title">Cartografias Territoriais</h3>
-                    <p class="card-description">Construção de mapeamentos participativos que expressam as vivências e saberes das comunidades, transformando a relação com o território.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">📻</div>
-                    <h3 class="card-title">Comunicação Comunitária</h3>
-                    <p class="card-description">Desenvolvimento de projetos de comunicação popular (rádio, vídeo, etc.) como ferramenta de mobilização e expressão territorial.</p>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">⚖️</div>
-                    <h3 class="card-title">Mediação de Conflitos</h3>
-                    <p class="card-description">Facilitação de processos dialógicos entre poder público e comunidades para a construção de consensos e pactos territoriais.</p>
-                </div>
+            <div class="card-modern">
+                <span class="card-icon-modern">🤝</span>
+                <h3 class="card-title-modern">Metodologias Participativas</h3>
+                <p class="card-text-modern">Facilitação de processos de diagnóstico, planejamento e avaliação que fortalecem a governança local.</p>
+            </div>
+            
+            <div class="card-modern">
+                <span class="card-icon-modern">📚</span>
+                <h3 class="card-title-modern">Educação Popular</h3>
+                <p class="card-text-modern">Formações que tecem vínculos, valorizam saberes territoriais e promovem direitos humanos.</p>
+            </div>
+            
+            <div class="card-modern">
+                <span class="card-icon-modern">📻</span>
+                <h3 class="card-title-modern">Comunicação Comunitária</h3>
+                <p class="card-text-modern">Projetos de comunicação popular como ferramenta de mobilização e expressão territorial.</p>
+            </div>
+            
+            <div class="card-modern">
+                <span class="card-icon-modern">⚖️</span>
+                <h3 class="card-title-modern">Mediação de Conflitos</h3>
+                <p class="card-text-modern">Facilitação de processos dialógicos entre poder público e comunidades.</p>
+            </div>
+            
+            <div class="card-modern">
+                <span class="card-icon-modern">🎭</span>
+                <h3 class="card-title-modern">Teatro do Oprimido</h3>
+                <p class="card-text-modern">Teatro como ferramenta de mobilização social e transformação.</p>
             </div>
         </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Da Periferia à Academia: Uma Trajetória de Transformação Social</h2>
-            </div>
-            
-            <div style="max-width: 900px; margin: 0 auto;">
-                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
-                    Minha atuação nasce do chão do <strong>Jardim Zaíra e Chafik-Macuco</strong>, territórios periféricos de Mauá que me ensinaram que transformação social se constrói coletivamente, com escuta ativa e presença constante. Esses territórios não são apenas objeto de estudo, mas lugares de vida, luta e criação coletiva que moldaram minha práxis.
-                </p>
-                
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                    Essa vivência territorial se articula com uma sólida formação acadêmica:
-                </p>
-                
-                <ul style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; list-style-position: inside;">
-                    <li><strong>Doutoranda em Planejamento e Gestão do Território</strong> pela Universidade Federal do ABC (UFABC), onde pesquiso cartografias territoriais na América Latina como integrante do grupo TERRITORIAL – Território Praticado, Conjuntura e Tecnopolítica.</li>
-                    <li><strong>Mestra em Comunicação Social</strong> pela Universidade Metodista de São Paulo (UMESP).</li>
-                    <li><strong>Graduada em Ciências Sociais</strong> pela Fundação Santo André (FSA).</li>
-                    <li><strong>Licenciada em Pedagogia e Teatro</strong>, com formação em Teatro do Oprimido pelo CTO-RJ.</li>
-                </ul>
-                
-                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; font-style: italic; border-left: 4px solid var(--terracota); padding-left: 1.5rem;">
-                    Essa dupla inserção, na academia e nos territórios, me permitiu consolidar uma práxis profissional dedicada a <strong>tecer processos formativos que valorizam os saberes dos territórios, mediam diálogos entre poder público e comunidades, e constroem coletivamente caminhos para o desenvolvimento territorial justo.</strong>
-                </p>
-                
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    Atuei como <strong>formadora em Direitos Humanos no Instituto Vladimir Herzog</strong>, coordenando a formação de profissionais da rede municipal de educação de São Paulo, e como <strong>coordenadora pedagógica no Centro Cultural Afro-Brasileiro Solano Trindade</strong> (2020-2023), desenvolvendo metodologias participativas para o fortalecimento de comunidades periféricas. Também lecionei por sete anos no ensino superior (2012-2020) em disciplinas como Antropologia, Economia, Política e Sociologia.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ASSESSORIA TÉCNICA -->
-    <section id="assessoria" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Planejamento, Gestão do Território e Governança Participativa</h2>
-                <p class="section-subtitle">Consultoria técnica especializada para organizações internacionais, poder público e organizações sociais, combinando rigor metodológico acadêmico com práxis territorial comprovada.</p>
-            </div>
-            
-            <div class="grid">
-                <div class="card">
-                    <h3 class="card-title">Diagnósticos Territoriais e Georreferenciamento</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Mapeamento participativo de territórios</li>
-                        <li>Análise socioespacial com dados georreferenciados</li>
-                        <li>Identificação de potencialidades e desafios territoriais</li>
-                        <li>Cartografias colaborativas</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Planos de Ação Coletivos</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Planejamento territorial participativo</li>
-                        <li>Construção de pactos territoriais</li>
-                        <li>Desenvolvimento de projetos de Slum Upgrading</li>
-                        <li>Planos de desenvolvimento territorial sustentável</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Mediação de Conflitos e Governança</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Facilitação de processos dialógicos entre poder público e comunidades</li>
-                        <li>Fortalecimento de instâncias participativas</li>
-                        <li>Construção de consensos e acordos territoriais</li>
-                        <li>Metodologias de escuta territorial ativa</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Consultoria em Políticas Públicas</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Assessoria para secretarias de educação e desenvolvimento urbano</li>
-                        <li>Desenvolvimento de políticas territorializadas</li>
-                        <li>Avaliação e monitoramento de programas sociais</li>
-                        <li>Articulação intersetorial</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div style="margin-top: 3rem; text-align: center;">
-                <a href="mailto:contato@raquelquintino.com.br" class="btn btn-primary">Solicitar Consultoria</a>
-            </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="mailto:contato@raquelquintino.com.br" class="btn btn-primary">Solicitar Consultoria</a>
         </div>
     </section>
 
     <!-- FORMAÇÕES -->
-    <section id="formacoes" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Formações</h2>
-                <p class="section-subtitle">Educação Popular, Direitos Humanos e Metodologias Participativas</p>
+    <section id="formacoes" class="section-modern" style="background: var(--cinza-claro);">
+        <h2 class="section-title-modern">Formações</h2>
+        <p class="section-subtitle-modern">Educação Popular, Direitos Humanos e Metodologias Participativas</p>
+        
+        <div class="cards-grid">
+            <div class="card-modern">
+                <h3 class="card-title-modern">Educação em Direitos Humanos</h3>
+                <ul class="card-text-modern" style="list-style-position: inside;">
+                    <li>Formação de educadores em EDH</li>
+                    <li>Metodologias de educação para os direitos humanos</li>
+                    <li>Cultura de paz e mediação de conflitos</li>
+                </ul>
             </div>
             
-            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem; font-style: italic;">
-                Processos formativos que tecem vínculos, valorizam saberes territoriais e constroem coletivamente caminhos de transformação social.
-            </p>
+            <div class="card-modern">
+                <h3 class="card-title-modern">Metodologias Participativas</h3>
+                <ul class="card-text-modern" style="list-style-position: inside;">
+                    <li>Diagnóstico participativo</li>
+                    <li>Planejamento colaborativo</li>
+                    <li>Facilitação de processos grupais</li>
+                    <li>Escuta territorial ativa</li>
+                </ul>
+            </div>
             
-            <div class="grid">
-                <div class="card">
-                    <h3 class="card-title">Educação em Direitos Humanos</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Formação de educadores em EDH</li>
-                        <li>Metodologias de educação para os direitos humanos</li>
-                        <li>Educação e comunicação em direitos humanos</li>
-                        <li>Cultura de paz e mediação de conflitos</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Metodologias Participativas</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Diagnóstico participativo</li>
-                        <li>Planejamento colaborativo</li>
-                        <li>Facilitação de processos grupais</li>
-                        <li>Pesquisa participativa</li>
-                        <li>Escuta territorial ativa</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Comunicação Comunitária e Popular</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Rádio comunitária e rádio poste</li>
-                        <li>Produção audiovisual comunitária</li>
-                        <li>Comunicação e direito à moradia</li>
-                        <li>Narrativas territoriais</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Teatro do Oprimido</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Técnicas de Teatro do Oprimido</li>
-                        <li>Teatro como ferramenta de mobilização social</li>
-                        <li>Teatro-fórum e teatro-imagem</li>
-                        <li>Arte-educação e cultura popular</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Educação e Território</h3>
-                    <ul class="card-description" style="list-style-position: inside;">
-                        <li>Territórios educativos</li>
-                        <li>Educação integral</li>
-                        <li>Projetos político-pedagógicos territorializados</li>
-                        <li>Cultura popular e arte-educação</li>
-                    </ul>
-                </div>
+            <div class="card-modern">
+                <h3 class="card-title-modern">Comunicação Comunitária</h3>
+                <ul class="card-text-modern" style="list-style-position: inside;">
+                    <li>Rádio comunitária e rádio poste</li>
+                    <li>Produção audiovisual comunitária</li>
+                    <li>Narrativas territoriais</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- TERRITÓRIOS -->
-    <section id="territorios" class="section">
-        <div class="container-wide">
-            <div class="section-header">
-                <h2 class="section-title">Territórios Praticados</h2>
-                <p class="section-subtitle">Experiências de Transformação Social</p>
-            </div>
-            
-            <p style="text-align: center; font-size: 1.2rem; max-width: 900px; margin: 0 auto 3rem; font-style: italic;">
-                O território não é apenas espaço geográfico, mas lugar de vida, luta e criação coletiva. Aqui compartilho experiências práticas de mobilização comunitária, educação popular e comunicação territorial.
-            </p>
-            
-            <!-- Projeto 1 -->
-            <div class="projeto">
-                <img src="assets/img/raquel-1.jpg" alt="Raquel Quintino - Rádio Poste" class="projeto-imagem">
-                <p class="projeto-legenda">
-                    <strong>Rádio Poste no Mutirão Tânia Maria:</strong> A Rádio Poste como ferramenta de articulação territorial no mutirão autogestionário Tânia Maria: comunicação popular a serviço da mobilização comunitária e do direito à moradia.
-                </p>
-                <div class="projeto-metodologia">
-                    <span class="tag">Comunicação comunitária</span>
-                    <span class="tag">Mobilização territorial</span>
+    <!-- DEVOLUTIVAS -->
+    <section id="devolutivas" class="depoimentos-modern">
+        <h2 class="section-title-modern">Devolutivas</h2>
+        <p class="section-subtitle-modern">Vozes de quem vivenciou os processos formativos</p>
+        
+        <div class="depoimento-destaque-modern">
+            <div class="depoimento-autor-modern">
+                <div>
+                    <h3>Kátia Beraldi</h3>
+                    <p class="depoimento-cargo-modern">Pedagoga</p>
                 </div>
             </div>
-            
-            <!-- Projeto 2 -->
-            <div class="projeto">
-                <img src="assets/img/raquel-2.jpg" alt="Raquel Quintino - Formação em Direitos Humanos" class="projeto-imagem">
-                <p class="projeto-legenda">
-                    <strong>Formação em Direitos Humanos (Instituto Vladimir Herzog):</strong> Tecer diálogos sobre educação e direitos humanos com profissionais da rede municipal de São Paulo: processos formativos que transformam práticas pedagógicas e fortalecem a cultura de direitos humanos nas escolas.
-                </p>
-                <div class="projeto-metodologia">
-                    <span class="tag">Educação em direitos humanos</span>
-                    <span class="tag">Formação de educadores</span>
-                </div>
+            <p class="depoimento-texto-modern">Eu diria que havia uma Kátia antes, e uma Kátia depois da Raquel. A Raquel é uma pessoa objetiva, com pensamentos e atitudes coerentes e justas, não hesita, porém, de uma sensibilidade incrível em relação às pessoas com quem convive. É um exemplo de mulher, mãe, amiga e profissional.... ainda bem, que ficou um pouco dela em mim.</p>
+        </div>
+        
+        <h3 style="text-align: center; color: var(--azul-profundo); margin-bottom: 2rem;">Professores da Rede Municipal de Ensino de São Paulo</h3>
+        <p style="text-align: center; color: var(--cinza-medio);        <p class="section-subtitle-modern">Devolutivas de educadores que participaram das formações em Direitos Humanos pelo Instituto Vladimir Herzog</p>
+        
+        <div class="depoimentos-grid-modern">
+            <div class="depoimento-card-modern">
+                <p>"A aula foi muito boa, a Raquel é muito didática. Aula maravilhosa, professora Raquel incrível!"</p>
             </div>
-            
-            <!-- Projeto 3 -->
-            <div class="projeto">
-                <img src="assets/img/raquel-3.jpg" alt="Raquel Quintino - Centro Cultural Solano Trindade" class="projeto-imagem">
-                <p class="projeto-legenda">
-                    <strong>Centro Cultural Solano Trindade:</strong> Coordenação pedagógica no Centro Cultural Afro-Brasileiro Solano Trindade: valorização da cultura afro-brasileira e fortalecimento de comunidades periféricas através da arte, educação e mobilização cultural.
-                </p>
-                <div class="projeto-metodologia">
-                    <span class="tag">Cultura popular</span>
-                    <span class="tag">Arte-educação</span>
-                    <span class="tag">Metodologias participativas</span>
-                </div>
+            <div class="depoimento-card-modern">
+                <p>"Estou amando, a formadora Raquel é maravilhosa, muito conhecimento e ótima didática."</p>
             </div>
-            
-            <!-- Projeto 4 -->
-            <div class="projeto">
-                <img src="assets/img/raquel-4.jpg" alt="Raquel Quintino - Laboratório de Rádio Comunitária" class="projeto-imagem">
-                <p class="projeto-legenda">
-                    <strong>Laboratório de Rádio Comunitária (SESC-SP):</strong> Formação em comunicação comunitária no SESC-SP: construir processos de escuta e expressão territorial através do rádio, fortalecendo a comunicação popular como direito humano.
-                </p>
-                <div class="projeto-metodologia">
-                    <span class="tag">Comunicação comunitária</span>
-                    <span class="tag">Rádio popular</span>
-                </div>
+            <div class="depoimento-card-modern">
+                <p>"Excelente formação dada pela Professora Raquel."</p>
             </div>
-            
-            <!-- Projeto 5 -->
-            <div class="projeto">
-                <img src="assets/img/raquel-5.jpg" alt="Raquel Quintino - VídeoAção" class="projeto-imagem">
-                <p class="projeto-legenda">
-                    <strong>VídeoAção:</strong> Inclusão digital e produção audiovisual em comunidades e centros socioeducativos: jovens como produtores de narrativas territoriais, protagonistas de suas próprias histórias.
-                </p>
-                <div class="projeto-metodologia">
-                    <span class="tag">Inclusão digital</span>
-                    <span class="tag">Produção audiovisual</span>
-                    <span class="tag">Protagonismo juvenil</span>
-                </div>
+            <div class="depoimento-card-modern">
+                <p>"Professora Raquel excelente. Raquel você é maravilhosa!!!! Super amei o curso."</p>
             </div>
-            
-            <!-- Projeto 6 -->
-            <div class="projeto">
-                <img src="assets/img/raquel-6.jpg" alt="Raquel Quintino - Cartografias Participativas" class="projeto-imagem">
-                <p class="projeto-legenda">
-                    <strong>Cartografias Participativas:</strong> Metodologias participativas de mapeamento: comunidades como protagonistas na produção de conhecimento sobre seus territórios, construindo cartografias que expressam seus saberes e vivências.
-                </p>
-                <div class="projeto-metodologia">
-                    <span class="tag">Mapeamento participativo</span>
-                    <span class="tag">Cartografias colaborativas</span>
-                </div>
+            <div class="depoimento-card-modern">
+                <p>"Maravilhosos os encontros, muitos aprendizados. Raquel nossa formadora, muito competente."</p>
+            </div>
+            <div class="depoimento-card-modern">
+                <p>"QUERO PARABENIZAR A PROFESSORA RAQUEL QUINTINO PELA EXCELÊNCIA NA CONDUÇÃO DO CURSO."</p>
             </div>
         </div>
     </section>
 
-    <!-- PUBLICAÇÕES -->
-    <section id="publicacoes" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Publicações</h2>
-                <p class="section-subtitle">Produção acadêmica e técnica que articula teoria e prática</p>
-            </div>
-            
-            <h3 style="color: var(--azul-profundo); margin-bottom: 1.5rem;">Livros</h3>
-            
-            <div class="publicacao">
-                <h4 class="publicacao-titulo">Comunicação Popular, Comunitária e Alternativa no Brasil</h4>
-                <p class="publicacao-info">Editora Metodista, 2015 - Coautora</p>
-                <div class="publicacao-links">
-                    <a href="#" class="link-download">📥 Download PDF</a>
-                    <a href="#" class="link-download">🛒 Comprar</a>
-                </div>
-            </div>
-            
-            <div class="publicacao">
-                <h4 class="publicacao-titulo">Inclusão Digital Na Medida</h4>
-                <p class="publicacao-info">CDI/Fundação Telefônica, 2007</p>
-                <div class="publicacao-links">
-                    <a href="#" class="link-download">📥 Download PDF</a>
-                </div>
-            </div>
-            
-            <h3 style="color: var(--azul-profundo); margin: 3rem 0 1.5rem;">Artigos Acadêmicos</h3>
-            
-            <div class="publicacao">
-                <h4 class="publicacao-titulo">Paulo Freire em um novo contexto político</h4>
-                <p class="publicacao-info">Revista Internacional, 2020</p>
-                <div class="publicacao-links">
-                    <a href="#" class="link-download">📥 Download PDF</a>
-                </div>
-            </div>
-            
-            <div class="publicacao">
-                <h4 class="publicacao-titulo">Comunicação e Educação em Direitos Humanos</h4>
-                <p class="publicacao-info">Instituto Vladimir Herzog, 2023</p>
-                <div class="publicacao-links">
-                    <a href="#" class="link-download">📥 Download PDF</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- DEPOIMENTOS -->
-<section id="depoimentos" class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Depoimentos</h2>
-            <p class="section-subtitle">Vozes de quem vivenciou os processos formativos</p>
-        </div>
-        
-        <!-- Depoimento Kátia Beraldi -->
-        <div class="depoimento-destaque">
-            <div class="depoimento-autor">
-                <h3>Kátia Beraldi</h3>
-                <p class="depoimento-cargo">Pedagoga</p>
-            </div>
-            <blockquote class="depoimento-texto">
-                <p>Eu diria que havia uma Kátia antes, e uma Kátia depois da Raquel. A Raquel é uma pessoa objetiva, com pensamentos e atitudes coerentes e justas, não hesita, porém, de uma sensibilidade incrível em relação às pessoas com quem convive. É um exemplo de mulher, mãe, amiga e profissional.... ainda bem, que ficou um pouco dela em mim.</p>
-            </blockquote>
-        </div>
-        
-        <h3 style="color: var(--azul-profundo); margin: 3rem 0 2rem; text-align: center;">Professores da Rede Municipal de Ensino de São Paulo</h3>
-        <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem; font-style: italic;">Depoimentos de educadores que participaram das formações em Direitos Humanos realizadas pelo Instituto Vladimir Herzog</p>
-        
-        <div class="depoimentos-grid">
-            <!-- Depoimento 1 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"A aula foi muito boa, a Raquel é muito didática. Aula maravilhosa, professora Raquel incrível! Já participei de uma formação pelo Instituto antes e sempre q vejo quero participar mais. Por mais momentos e formações assim."</p>
-            </div>
-            
-            <!-- Depoimento 2 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Eu sempre aprendo muito! Meu muito obrigado a professora Raquel."</p>
-            </div>
-            
-            <!-- Depoimento 3 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Estou amando, a formadora Raquel é maravilhosa, muito conhecimento e ótima didática. Parabenizar o modo como a professora Raquel abordou a questão e foi lidando com os comentários do grupo."</p>
-            </div>
-            
-            <!-- Depoimento 4 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Excelente formação dada pela Professora Raquel."</p>
-            </div>
-            
-            <!-- Depoimento 5 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Eu amei tudo! Muito obrigada de verdade! Parabéns Raquel!"</p>
-            </div>
-            
-            <!-- Depoimento 6 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Foi muito bom participar desses encontros. Frea aqui meu agradecimento a prof Raquel que trouxe um aprendizado significante para mim. Acredito na força e poder que enquanto educadora/professora posso dar voz aos alunos, dar voz ao que eu acredito como ser humano. Que o28mha não mudo, mas posso plantar, e lá na frente vou colher. Vai colher. É isso importa."</p>
-            </div>
-            
-            <!-- Depoimento 7 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"A bagagem da Raquel espero que algum dia ter um terço desse conhecimento. Esse curso precisaria de mais tempo para tarla conversa. Agradeço a oportunidade de ampliar os conhecimentos com a educadora Raquel e com o grupo."</p>
-            </div>
-            
-            <!-- Depoimento 8 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Professora Raquel excelente. Raquel você é maravilhosa!!!! Super amei o curso."</p>
-            </div>
-            
-            <!-- Depoimento 9 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Maravilhosos os encontros, muitos aprendizados. Raquel nossa formadora, muito competente. Somente agradecer pela oportunidade e elogiar a formadora Raquel, excelência no trabalho."</p>
-            </div>
-            
-            <!-- Depoimento 10 - DESTAQUE -->
-            <div class="depoimento-card depoimento-destaque-grid">
-                <p class="depoimento-texto" style="font-weight: 600; font-size: 1.1rem;">"QUERO PARABENIZAR A PROFESSORA RAQUEL QUINTINO PELA EXCELÊNCIA NA CONDUÇÃO DO CURSO TENDO COMO DIREITO HUMANOS PARA AS COMISSÕES DE MEDIAÇÃO DE CONFLITOS. É UM APRENDIZADO PARA SER APLICADO DENTRO E FORA DOS MUROS DA ESCOLA. E PARA A VIDA. TOMO PARA MIM A RESPONSABILIDADE E MULTIPLICAR O APRENDIMENTO. RAQUEL GRATIDÃO PELA SUA ENTREGA E SEU TEMPO. VOCÊ É INCRÍVEL."</p>
-            </div>
-            
-            <!-- Depoimento 11 -->
-            <div class="depoimento-card">
-                <p class="depoimento-texto">"Quero ressaltar a habilidade da orientadora deste acolhedora."</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-/* Estilos para Depoimentos */
-.depoimento-destaque {
-    background: linear-gradient(135deg, var(--azul-claro) 0%, #ffffff 100%);
-    padding: 3rem;
-    border-radius: 12px;
-    margin-bottom: 3rem;
-    border-left: 5px solid var(--terracota);
-}
-
-.depoimento-autor h3 {
-    color: var(--azul-profundo);
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.depoimento-cargo {
-    color: var(--terracota);
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-}
-
-.depoimento-texto {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #333;
-    font-style: italic;
-}
-
-.depoimentos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.depoimento-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.depoimento-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.depoimento-card .depoimento-texto {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-.depoimento-destaque-grid {
-    background: linear-gradient(135deg, var(--amarelo-mostarda) 0%, #f9e5a8 100%);
-    grid-column: span 2;
-}
-
-.depoimento-destaque-grid .depoimento-texto {
-    color: var(--azul-profundo);
-}
-
-@media (max-width: 768px) {
-    .depoimento-destaque-grid {
-        grid-column: span 1;
-    }
-    
-    .depoimentos-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
     <!-- CONTATO -->
-    <section class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" style="color: var(--amarelo-mostarda);">Vamos conversar?</h2>
-                <p class="section-subtitle" style="color: var(--azul-claro);">Entre em contato para conhecer melhor o trabalho ou agendar uma conversa.</p>
-            </div>
-            
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="mailto:contato@raquelquintino.com.br" class="btn btn-primary" style="font-size: 1.2rem;">Enviar mensagem</a>
-            </div>
+    <section id="contato" class="section-modern">
+        <h2 class="section-title-modern">Vamos conversar?</h2>
+        <p class="section-subtitle-modern">Entre em contato para conhecer melhor o trabalho ou agendar uma conversa</p>
+        <div style="text-align: center;">
+            <a href="mailto:contato@raquelquintino.com.br" class="btn btn-primary" style="font-size: 1.2rem;">Enviar mensagem</a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Raquel Quintino</h3>
-                    <p>Pesquisadora, Professora, Comunicadora Social</p>
-                    <p>Vidas em Movimento</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contato</h3>
-                    <p>Email: contato@raquelquintino.com.br</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Redes Sociais</h3>
-                    <p>
-                        <a href="#">LinkedIn</a> | 
-                        <a href="#">Instagram</a> | 
-                        <a href="#">Lattes</a>
-                    </p>
-                </div>
+    <footer class="footer-modern">
+        <div class="footer-content-modern">
+            <div class="footer-section-modern">
+                <h3>Raquel Quintino</h3>
+                <p>Pesquisadora, Professora, Comunicadora Social</p>
+                <p>Vidas em Movimento</p>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Raquel Quintino. Todos os direitos reservados.</p>
+            <div class="footer-section-modern">
+                <h3>Contato</h3>
+                <p>contato@raquelquintino.com.br</p>
+            </div>
+            <div class="footer-section-modern">
+                <h3>Redes Sociais</h3>
+                <p><a href="#">LinkedIn</a> | <a href="#">Instagram</a> | <a href="#">Lattes</a></p>
             </div>
         </div>
+        <p style="color: var(--azul-claro); margin-top: 2rem;">&copy; 2026 Raquel Quintino. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- JavaScript para navegação suave -->
     <script>
-        // Smooth scroll para links de navegação
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
         
-        // Atualizar link ativo na navegação
+        // Active nav link
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
             
             let current = '';
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 200) {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
                     current = section.getAttribute('id');
                 }
             });
