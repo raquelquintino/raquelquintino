@@ -1,13 +1,17 @@
 /* ========================================
-   SITE ACADÊMICO RAQUEL QUINTINO
-   Design Profissional, Responsivo e Funcional
+   SITE RAQUEL QUINTINO - DESIGN FINAL
+   Baseado no mockup aprovado
    ======================================== */
 
-/* FONTES */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap');
+/* === RESET E BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* VARIÁVEIS DE CORES - Paleta Institucional */
 :root {
+    /* Paleta de Cores */
     --azul-profundo: #384166;
     --azul-claro: #cfe5ff;
     --terracota: #D2691E;
@@ -18,13 +22,6 @@
     --preto: #1a1a1a;
 }
 
-/* RESET E BASE */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -33,346 +30,293 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--preto);
-    line-height: 1.7;
+    line-height: 1.6;
     background: var(--branco);
 }
 
-/* TIPOGRAFIA */
+/* === TIPOGRAFIA === */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora', serif;
     font-weight: 600;
     line-height: 1.3;
-    color: var(--azul-profundo);
 }
 
 .cursive {
     font-family: 'Great Vibes', cursive;
-    font-weight: 400;
 }
 
-/* HEADER ACADÊMICO */
-.header-academico {
+/* === HEADER === */
+header {
     background: var(--branco);
     border-bottom: 3px solid var(--azul-profundo);
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.header-container {
+.header-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.logo-academico {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+.logo-section {
+    flex: 1;
 }
 
-.logo-nome {
+.logo {
     font-family: 'Great Vibes', cursive;
     font-size: 2.5rem;
-    color: var(--azul-profundo);
+    color: #2d5016;
     text-decoration: none;
-    line-height: 1;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
-.logo-subtitulo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.85rem;
+.subtitle {
+    font-size: 0.9rem;
     color: var(--cinza-medio);
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-weight: 400;
 }
 
-.nav-academico ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.nav-academico a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--azul-profundo);
+nav a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: var(--azul-profundo);
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.85rem;
     letter-spacing: 0.5px;
+    transition: color 0.3s;
 }
 
-.nav-academico a:hover {
+nav a:hover {
     color: var(--terracota);
 }
 
-/* HERO SECTION ACADÊMICO */
-.hero-academico {
-    background: linear-gradient(135deg, var(--azul-profundo) 0%, #2a3150 100%);
+/* === HERO SECTION === */
+.hero {
+    background: linear-gradient(135deg, var(--azul-profundo) 0%, #2c3454 100%);
     color: var(--branco);
     padding: 4rem 2rem;
     text-align: center;
 }
 
-.hero-content-academico {
+.hero-content {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.hero-titulo-principal {
+.hero h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--branco);
+    font-weight: 400;
 }
 
-.hero-subtitulo {
+.hero h2 {
     font-family: 'Lora', serif;
     font-size: 1.3rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
     color: var(--azul-claro);
+    margin-bottom: 1rem;
+    font-weight: 400;
 }
 
-.hero-descricao {
+.hero p {
     font-size: 1.1rem;
-    line-height: 1.8;
     margin-bottom: 2rem;
-    font-weight: 300;
+    line-height: 1.8;
 }
 
-.hero-ctas-academico {
+.hero-buttons {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.btn-academico {
+.btn {
     padding: 0.9rem 2rem;
-    font-size: 0.95rem;
-    font-weight: 600;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 4px;
+    font-weight: 600;
     transition: all 0.3s;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: inline-block;
+    font-size: 0.95rem;
 }
 
-.btn-primary-academico {
+.btn-primary {
     background: var(--terracota);
     color: var(--branco);
     border: 2px solid var(--terracota);
 }
 
-.btn-primary-academico:hover {
-    background: transparent;
-    color: var(--branco);
+.btn-primary:hover {
+    background: #b85a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(210, 105, 30, 0.3);
 }
 
-.btn-secondary-academico {
+.btn-secondary {
     background: transparent;
     color: var(--branco);
     border: 2px solid var(--branco);
 }
 
-.btn-secondary-academico:hover {
+.btn-secondary:hover {
     background: var(--branco);
     color: var(--azul-profundo);
 }
 
-/* CONTAINER PRINCIPAL */
-.container-academico {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+/* === SECTIONS === */
+section {
+    padding: 5rem 2rem;
 }
 
-/* SEÇÕES */
-.secao-academica {
-    padding: 5rem 0;
-}
-
-.secao-bg-cinza {
-    background: var(--cinza-claro);
-}
-
-.titulo-secao {
+.section-title {
     font-size: 2.5rem;
+    color: var(--azul-profundo);
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--azul-profundo);
 }
 
-.subtitulo-secao {
+.section-subtitle {
     font-size: 1.2rem;
-    text-align: center;
     color: var(--cinza-medio);
+    text-align: center;
     margin-bottom: 3rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-/* SOBRE - LAYOUT ACADÊMICO */
-.sobre-grid {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === SOBRE SECTION === */
+#sobre {
+    background: var(--branco);
+}
+
+.sobre-content {
     display: grid;
     grid-template-columns: 350px 1fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: start;
 }
 
 .sobre-foto {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-.sobre-conteudo h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--azul-profundo);
-}
-
-.sobre-conteudo p {
-    margin-bottom: 1.5rem;
+.sobre-texto p {
     text-align: justify;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
-.sobre-conteudo strong {
+.sobre-texto strong {
     color: var(--azul-profundo);
     font-weight: 600;
 }
 
-/* CARDS ACADÊMICOS */
+/* === CARDS GRID === */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
 }
 
-.card-academico {
+.card {
     background: var(--branco);
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s;
     border-left: 4px solid var(--terracota);
 }
 
-.card-academico:hover {
+.card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-.card-icone {
+.card-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    display: block;
 }
 
-.card-titulo {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+.card h3 {
+    font-size: 1.3rem;
     color: var(--azul-profundo);
+    margin-bottom: 0.8rem;
 }
 
-.card-texto {
+.card p {
     color: var(--cinza-medio);
     line-height: 1.7;
 }
 
-.card-lista {
+.card ul {
     list-style: none;
-    margin-top: 1rem;
+    padding-left: 0;
 }
 
-.card-lista li {
-    padding: 0.5rem 0;
+.card li {
     padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
     position: relative;
     color: var(--cinza-medio);
 }
 
-.card-lista li:before {
-    content: "▸";
+.card li:before {
+    content: "•";
     position: absolute;
     left: 0;
     color: var(--terracota);
     font-weight: bold;
 }
 
-/* DEVOLUTIVAS */
-.devolutiva-destaque {
-    background: linear-gradient(135deg, var(--azul-claro) 0%, #e8f4ff 100%);
-    padding: 3rem;
-    border-radius: 8px;
-    border-left: 6px solid var(--azul-profundo);
-    margin-bottom: 3rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+/* === ÁREAS DE ATUAÇÃO === */
+#atuacao {
+    background: var(--cinza-claro);
 }
 
-.devolutiva-autor {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--azul-profundo);
-    margin-bottom: 0.5rem;
-}
-
-.devolutiva-cargo {
-    font-size: 1rem;
-    color: var(--cinza-medio);
-    margin-bottom: 1.5rem;
-    font-style: italic;
-}
-
-.devolutiva-texto {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--preto);
-    font-style: italic;
-}
-
-.devolutivas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.devolutiva-card {
+/* === FORMAÇÕES === */
+#formacoes {
     background: var(--branco);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-    border-top: 3px solid var(--terracota);
 }
 
-.devolutiva-card p {
-    font-style: italic;
-    color: var(--cinza-medio);
-    line-height: 1.7;
-}
-
-/* GALERIA DE FOTOS */
-.galeria-academica {
+/* === GALERIA DE FOTOS === */
+.galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     margin-top: 3rem;
 }
 
 .galeria-item {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     aspect-ratio: 4/3;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .galeria-item img {
@@ -386,165 +330,251 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-.galeria-legenda {
+.galeria-caption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: var(--branco);
-    padding: 2rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem;
     font-size: 0.9rem;
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-.galeria-item:hover .galeria-legenda {
+.galeria-item:hover .galeria-caption {
     opacity: 1;
 }
 
-/* CONTATO */
-.contato-secao {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: var(--azul-profundo);
-    color: var(--branco);
+/* === DEVOLUTIVAS === */
+#devolutivas {
+    background: var(--cinza-claro);
 }
 
-.contato-secao h2 {
-    color: var(--branco);
+.devolutiva-destaque {
+    background: linear-gradient(135deg, var(--azul-claro) 0%, #e6f2ff 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 6px solid var(--azul-profundo);
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.devolutiva-destaque .nome {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: var(--azul-profundo);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.devolutiva-destaque .cargo {
+    font-style: italic;
+    color: var(--cinza-medio);
     margin-bottom: 1rem;
 }
 
-.contato-secao p {
+.devolutiva-destaque .texto {
+    font-style: italic;
     font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--preto);
+}
+
+.devolutivas-professores {
+    margin-top: 3rem;
+}
+
+.devolutivas-professores h3 {
+    font-size: 1.5rem;
+    color: var(--azul-profundo);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.devolutivas-professores .descricao {
+    text-align: center;
+    color: var(--cinza-medio);
     margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.devolutivas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.devolutiva-card {
+    background: var(--branco);
+    padding: 1.8rem;
+    border-radius: 12px;
+    border-top: 3px solid var(--terracota);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.devolutiva-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.devolutiva-card p {
+    font-style: italic;
+    color: var(--cinza-medio);
+    line-height: 1.7;
+}
+
+/* === CONTATO === */
+#contato {
+    background: var(--azul-profundo);
+    color: var(--branco);
+    text-align: center;
+}
+
+#contato .section-title {
+    color: var(--branco);
+}
+
+#contato .section-subtitle {
     color: var(--azul-claro);
 }
 
-.contato-links {
+.contato-buttons {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
-.contato-link {
+.contato-btn {
+    padding: 1rem 2.5rem;
+    border: 2px solid var(--branco);
+    background: transparent;
     color: var(--branco);
     text-decoration: none;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid var(--branco);
-    border-radius: 4px;
+    border-radius: 8px;
+    font-weight: 600;
     transition: all 0.3s;
+    display: inline-block;
 }
 
-.contato-link:hover {
+.contato-btn:hover {
     background: var(--branco);
     color: var(--azul-profundo);
+    transform: translateY(-2px);
 }
 
-/* FOOTER */
-.footer-academico {
+/* === FOOTER === */
+footer {
     background: var(--preto);
-    color: var(--cinza-claro);
+    color: #cccccc;
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
 }
 
-/* RESPONSIVIDADE */
+/* === RESPONSIVIDADE === */
+
+/* Tablet */
 @media (max-width: 968px) {
-    .header-container {
+    .header-content {
         flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .nav-academico ul {
         gap: 1rem;
-        justify-content: center;
     }
     
-    .hero-titulo-principal {
+    nav ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hero h1 {
         font-size: 3rem;
     }
     
-    .sobre-grid {
+    .sobre-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
     .sobre-foto {
-        max-width: 350px;
+        max-width: 400px;
         margin: 0 auto;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
     }
     
     .cards-grid {
         grid-template-columns: 1fr;
     }
     
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+    
+    .contato-buttons {
+        flex-direction: column;
+    }
+    
+    .contato-btn {
+        width: 100%;
+    }
+    
     .devolutivas-grid {
         grid-template-columns: 1fr;
     }
-    
-    .galeria-academica {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 640px) {
-    html {
-        font-size: 14px;
-    }
-    
-    .logo-nome {
-        font-size: 2rem;
-    }
-    
-    .hero-titulo-principal {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitulo {
-        font-size: 1.1rem;
-    }
-    
-    .nav-academico ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
-    }
-    
-    .titulo-secao {
-        font-size: 2rem;
-    }
-    
-    .hero-ctas-academico {
-        flex-direction: column;
-    }
-    
-    .btn-academico {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .galeria-academica {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ANIMAÇÕES SUAVES */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
 }
